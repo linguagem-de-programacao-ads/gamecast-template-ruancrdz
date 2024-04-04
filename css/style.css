@@ -1,0 +1,147 @@
+/* Variáveis */
+:root {
+    --azul: #5c86ff;
+    --vermelho: #f15652;
+    --off-white: #F2F2F2;
+    --pure-black: #151515;
+    --pure-black-transparent: #202020;
+    --font-defaut: 'Roboto Mono', monospace;
+}
+
+/* Geral/Aplicado em todas as telas */
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+body {
+    background-color: var(--pure-black);
+    background-image: url(../imagens/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+nav {
+    display: flex;
+    align-content: center;
+    height: 80px;
+    background-color: var(--pure-black);
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    img {
+        height: 30px;
+    }
+
+    a {
+        color: #fff;
+        font-family: var(--font-defaut);
+        text-decoration: none;
+    }
+}
+
+/* Página de Eventos*/
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 50px;
+
+    .cardItem {
+        display: flex;
+        flex-wrap: wrap;
+        width: 30%;
+        margin: 0px 0px 25px 0px;
+    }
+
+}
+
+
+.dataGame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    color: #fff;
+    font-family: var(--font-defaut);
+    font-size: 17px;
+    background-color: var(--pure-black-transparent);
+    border-radius: 5px 5px 0px 0px;
+    
+    img {
+        width: 6%;
+        margin-right: 10px;
+    }
+}
+
+.img-background {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.descricao {
+    background-color: var(--pure-black-transparent);
+    padding: 15px;
+    border-top: solid var(--azul) 3px;
+
+    p {
+        font-family: var(--font-defaut);
+        color: var(--off-white);
+        font-weight: 300;
+        line-height: 150%;
+        margin-bottom: 5px;
+        justify-content: space-around;
+    }
+}
+
+.gamers {
+    display: flex;
+    flex-wrap: wrap;
+
+    .gamerItem {
+        padding: 7px;
+        font-size: 12px;
+        border-radius: 15px;
+        color: #fff;
+        border: solid #fff 1px;
+        font-family: var(--font-defaut);
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+.assistir {
+    display: flex;
+    justify-content: center;
+
+    .assistirItem {
+        background-color: var(--vermelho);
+        color: #fff;
+        padding: 5px;
+        border-radius: 0px 0px 5px 5px;
+        cursor: pointer;
+        font-family: var(--font-defaut);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+        img {
+            width: 15%;
+            margin-right: 15px;
+            color: rebeccapurple;
+        }
+    }
+}
+
+
+
+/* ADICIONAR EVENTO - Inserir CSS da página de adicionar*/
